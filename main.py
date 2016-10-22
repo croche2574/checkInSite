@@ -20,8 +20,8 @@ class Application(tornado.web.Application):
         
 
         handlers = [
-            (r'/Dashboard', DashHandler),
-            (r'/(.*)', tornado.web.StaticFileHandler, {'path': "static"}),
+            (r'/dashboard', DashHandler),
+            (r'/static/(.*)', tornado.web.StaticFileHandler, {'path': "static"}),
             
             (r'/', IndexHandler),
         ]
