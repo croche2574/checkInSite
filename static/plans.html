@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>SignUp - Home</title>
+
+  <!-- CSS  -->
+  
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+
+
+  <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container">
+        <a href="index.html" class="brand-logo">Logo</a>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="features.html">Features</a></li>
+        <li class="active"><a href="plans.html">Plans</a></li>
+        <li><a class="modal-trigger" href="#modal1">Login/Signup</a></li>
+      </ul>
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="features.html">Features</a></li>
+        <li class="active"><a href="plans.html">Plans</a></li>
+        <li><a class="modal-trigger" href="#modal1">Login/Signup</a></li>
+      </ul>      
+    </div>
+  </nav>
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center orange-text">Coming Soon!</h1>
+      <div class="row center">
+        <h5 class="header col s12 light">Pricing to meet your needs.</h5>
+      </div>
+      <div class="row center">
+        <a href="index.html" id="NewEvent" class="btn-large waves-effect waves-light orange">Return to Home</a>
+      </div>
+
+      <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Log In</h4>
+      <div class="input-field col s6">
+          <input placeholder="Username" id="user_name" type="text" class="validate">
+          <input placeholder="Password" id="password" type="password" class="validate">
+          
+        </div>
+        <a class="modal-trigger modal-action modal-close" href="#modal2">Or, create an account</a>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-red btn-flat">Cancel</a>
+      <button class=" modal-action modal-close waves-effect waves-green btn-flat" type="submit" name="action">Log In
+        <i class="material-icons right">send</i>
+      </button>
+    </div>
+  </div>
+
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <h4>Create Account</h4>
+      <div class="input-field col s6">
+          <input placeholder="Enter Username" id="user_name" type="text" class="validate">
+          <input placeholder="Enter Email" id="email1" type="email" class="validate">
+          <input placeholder="Enter Password" id="password" type="password" class="validate">
+          <input placeholder="Confirm Password" id="password2" type="password" class="validate">
+        </div>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-red btn-flat">Cancel</a>
+      <button class=" modal-action modal-close waves-effect waves-green btn-flat" type="submit" name="action">Submit
+        <i class="material-icons right">send</i>
+      </button>
+    </div>
+  </div>
+
+      <br><br>
+
+    </div>
+  </div>
+
+
+
+
+<!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script>
+    $(document).ready(function() {
+      // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+      $('.modal-trigger').leanModal();
+    });
+  </script>
+  </body>
+</html>
